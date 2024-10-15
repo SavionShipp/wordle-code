@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+#word-grid {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr); 
+  gap: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid #bbb;
+  text-transform: uppercase;
+}
+
+#keyboard {
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  gap: 10px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: flex;
+  gap: 5px;
+}
+
+.key {
+  padding: 15px;
+  background-color: white;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .cell {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .key {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
