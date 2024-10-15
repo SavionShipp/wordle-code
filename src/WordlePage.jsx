@@ -15,6 +15,9 @@ export function WordlePage() {
     guess1Split = guess1.split("");
     console.log(guess1Split);
     console.log(guess1Split[0]);
+    if (wordOfDay.includes(guess1Split[0])) {
+      console.log("Letter is in word")
+    }
   }
 
   return (
